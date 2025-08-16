@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rbvU40ukHSP+gJJlE0S7i5pmKSJCwZ+4xs95VPOm22w=",
+  "Source": "ApiAggregation",
+  "BasePath": "_content/ApiAggregation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
