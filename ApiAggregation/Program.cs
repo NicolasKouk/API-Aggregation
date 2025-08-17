@@ -19,11 +19,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", () =>
+app.MapGet("/", (decimal latitude, decimal longitude) =>
 {
-    //return "Hello Woooorld!";
 
-    System.Net.HttpWebRequest webrequest = (HttpWebRequest)System.Net.WebRequest.Create("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,relative_humidity_2m,is_day,rain");
+    System.Net.HttpWebRequest webrequest = (HttpWebRequest)System.Net.WebRequest.Create($"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,relative_humidity_2m,is_day,rain");
     webrequest.Method = "GET";
     string result;
     using (WebResponse response = webrequest.GetResponse()) 
