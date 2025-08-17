@@ -20,7 +20,7 @@ if (app.Environment.IsDevelopment())
 
 string unite_jsons(List<string> res) {
     if (res.Count == 0) {
-        return "error";
+        return "No APIs were available. ";
     }
     if (res.Count == 1) {
         return res[0];
