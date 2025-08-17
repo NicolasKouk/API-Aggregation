@@ -17,9 +17,8 @@ if (app.Environment.IsDevelopment())
 {
 }
 
-app.UseHttpsRedirection();
 
-app.MapGet("/", (decimal latitude, decimal longitude) =>
+app.MapGet("/", (decimal? latitude=0, decimal? longitude=0) =>
 {
 
     System.Net.HttpWebRequest webrequest = (HttpWebRequest)System.Net.WebRequest.Create($"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,relative_humidity_2m,is_day,rain");
