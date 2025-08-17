@@ -22,6 +22,6 @@ After extrapolating the data, we aggregate them. Since we work with JSONs transf
 
 ## Notes
 
-- ALl procedures are performed within Program.cs. While we could have used a controller file, the small size of the project allowed us to work more flexibly with a single code file.
+- All procedures are performed within Program.cs. While we could have used a controller file, the small size of the project allowed us to work more flexibly with a single code file.
 - The `requests.http` file contains requests that can be used for testing the webapi and exploring its capabilities.
 - The geographical coordinates in the `requests.http` file correspond to the coordinates of Chalandri, Athens, therefore the returned weather is the current weather in Chalandri, Athens. 
