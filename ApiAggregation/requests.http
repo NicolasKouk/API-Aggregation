@@ -2,5 +2,13 @@ GET http://localhost:5116/
 
 ###
 
-GET http://localhost:5116/services
+GET http://localhost:5116?latitude=38.016667&longitude=23.783333
+
+###
+
+GET http://localhost:5116?q=the+lord+of+the+rings
+
+###
+
+GET http://localhost:5116?latitude=38.016667&longitude=23.783333&q=the+lord+of+the+rings
 

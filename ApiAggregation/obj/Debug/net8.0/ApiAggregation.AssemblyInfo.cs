@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiAggregation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a2f4d4fa629e15e75d815880185d2799310caf2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+603844b6a7a5e9004eaf45172261138b83c4bf14")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiAggregation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiAggregation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
