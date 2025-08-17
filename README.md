@@ -20,6 +20,10 @@ The third API is a virtual book library, named Open Library. The user searches f
 
 After extrapolating the data, we aggregate them. Since we work with JSONs transformed to strings, we concatinate the strings accordingly, so that the whole structure can still be functional as a JSON after suitable transformations. Another way of performing this aggregation could include deserializing the JSONs into objects, connecting them together and then serializing them again, so that they can form one single JSON. 
 
+## Error handling
+
+In the case that the API is not available, we have included error handling mechanisms that divert the situation from the error and allow the webservice to continue normally. Since we are dealing with JSONs, returning a string as part of the JSON would not be ideal, as it would tamper with the integrity of the JSON. Therefore we return an error message to the console and we continue. Should all APIs be unavailable, then a general error message appears on the webservice. 
+
 ## Notes
 
 - All procedures are performed within Program.cs. While we could have used a controller file, the small size of the project allowed us to work more flexibly with a single code file.
