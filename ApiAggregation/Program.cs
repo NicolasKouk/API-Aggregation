@@ -55,8 +55,7 @@ app.MapGet("/", (decimal? latitude=0, decimal? longitude=0, string? q = "") =>
             }
         }
     }
-    catch
-    {
+    catch {
         Console.WriteLine("Something went wrong.");
     }
 
